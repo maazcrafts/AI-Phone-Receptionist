@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Local AI/model data
+models/
+*.bin
+*.gguf
+
+# Audio / recordings / transcripts
+audio/
+recordings/
+transcripts/
+*.wav
+*.mp3
+*.m4a
+
+# Logs
+*.log
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
