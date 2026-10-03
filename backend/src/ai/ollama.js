@@ -1,8 +1,8 @@
 import process from "node:process";
 
-const baseUrl = process.env.OLLAMA_HOST || "http://127.0.0.1:11434";
+export async function generateReply(messages, model = process.env.OLLAMA_MODEL || "qwen2.5:3b") {
+  const baseUrl = process.env.OLLAMA_HOST || "http://127.0.0.1:11434";
 
-export async function generateReply(messages, model = process.env.OLLAMA_MODEL) {
   if (!model) {
     throw new Error("OLLAMA_MODEL is not configured.");
   }
